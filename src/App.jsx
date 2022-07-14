@@ -1,9 +1,11 @@
 import React from 'react'
+import AppRouter from './router/AppRouter'
 
 const App = () => {
   return (
     <>
-      <h1>Heroes spa</h1>
+      <AppRouter />
+
     </>
   )
 }
