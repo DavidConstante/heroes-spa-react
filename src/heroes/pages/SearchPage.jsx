@@ -26,7 +26,7 @@ const SearchPage = () => {
 
 
     return (
-        <div className='p-16 flex justify-around  bg-red-50 h-screen'>
+        <div className='p-16 flex justify-around  bg-red-50 h-screen '>
 
             <form className='flex flex-col justify-start items-center  mx-8 w-1/2' onSubmit={onSearchSubmit}>
                 <p className='font-bold text-2xl'>Searching</p>
@@ -48,7 +48,7 @@ const SearchPage = () => {
 
                 {
                     heroes.length !== 0 ?
-                        <div className='grid grid-cols-2 bg-blue-200 my-4 p-4 rounded-md overflow-scroll'>
+                        <div className='grid grid-cols-2 bg-blue-200 my-4 p-4 rounded-md overflow-scroll scrollbar-hide'>
                             {heroes.map((hero) => <HeroItem key={hero.id} hero={hero} />)}
                         </div>
                         :
