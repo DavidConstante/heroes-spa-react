@@ -19,8 +19,8 @@ const HeroPage = () => {
     }
 
     return (
-        <div className='flex m-12 animate__animated animate__bounce animate__faster'>
-            <img src={heroImage} className='w-1/3 rounded-lg ' alt="" />
+        <div className='flex justify-center m-12 animate__animated animate__bounce animate__fadeIn'>
+            <img src={heroImage} className='w-1/4 rounded-lg ' alt="" />
             <div className='mx-12'>
                 <p className='text-2xl font-bold'>{hero.superhero}</p>
 
