@@ -1,6 +1,15 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 
 const LoginPage = () => {
+
+    const navigate = useNavigate();
+
+    const onLogin = () => {
+        navigate('/', {
+            replace: true
+        })
+    }
     return (
         <div className="relative flex flex-col justify-center min-h-screen overflow-hidden">
             <div className="w-1/2 p-6 m-auto bg-white border-t-4 border-slate-700 rounded-md shadow-md border-top lg:max-w-md">
@@ -17,7 +26,10 @@ const LoginPage = () => {
                         </div>
                         <a href="#" className="text-xs text-gray-600 hover:underline">Forget Password?</a>
                         <div className="mt-6">
-                            <button className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-slate-700 rounded-md hover:bg-slate-600 focus:outline-none focus:bg-slate-600">
+                            <button
+                                className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-slate-700 rounded-md hover:bg-slate-600 focus:outline-none focus:bg-slate-600"
+                                onClick={onLogin}
+                            >
                                 Login
                             </button>
                         </div>

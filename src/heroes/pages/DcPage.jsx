@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useMemo } from 'react'
+import HeroList from '../components/HeroList';
+import { getHeroesByPublisher } from '../helpers/heroData'
 
 const DcPage = () => {
+    const DCHeroes = useMemo(() => getHeroesByPublisher('DC Comics'))
     return (
-        <div>DcPage</div>
+        <>
+            <HeroList heroes={DCHeroes} />
+        </>
     )
 }
 

@@ -18,6 +18,7 @@ const Navbar = () => {
 
                 <NavLink to="/marvel" className={({ isActive }) => `hover:cursor-pointer mx-4 ${isActive ? 'font-bold' : ''} `}>Marvel</NavLink>
                 <NavLink to="/dc" className={({ isActive }) => `hover:cursor-pointer mx-4 ${isActive ? 'font-bold' : ''} `}>DC</NavLink>
+                <NavLink to="/search" className={({ isActive }) => `hover:cursor-pointer mx-4 ${isActive ? 'font-bold' : ''} `}>Search</NavLink>
             </div>
             <div className='flex items-center'>
                 <p className='mx-4 text-blue-400'>David</p>
